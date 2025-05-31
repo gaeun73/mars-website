@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    /* background-color: #fff0f6; */
+    background-image: linear-gradient(to bottom, #fff0f6, #ffddeb);
+}
+.layout {
+    width: 1024px;
+    /* height: 1700px; */
+    background-color: rgb(255, 253, 253);
+    margin: 0 auto;
+}
+.menu {
+    width: 1024px;
+    height: 100px;
+    /* background-color: blue; */
+}
+.menu_home_img {
+    width: 200px;
+    height: 100px;
+    padding: 0 20px;
+    /* background-color: blueviolet; */
+    float: left;
+}
+.menu li {
+    list-style: none;
+    float: left;
+    /* padding: 20px 40px; */
+    /* a랑 padding값이 겹치면 커지기 때문에 삭제함 */
+    margin: 20px 20px 20px 0;
+    border-radius: 20px;
+}
+.menu li a{
+    color: black;
+    list-style: none;
+    float: left;
+    padding: 20px 40px;
+    /* margin: 20px 20px 20px 0; */
+    border-radius: 20px;
+}
+.menu li:nth-child(1){
+    background-color:#f0f0ff ;
+}
+.menu li:nth-child(2){
+    background-color:#ffe6f0;
+}
+.menu li:nth-child(3){
+    background-color:#eaf6ff ;
+}
+.menu li:first-child {
+    margin: 20px 20px 20px 390px;
+}
+.menu li:nth-child(1) a:hover {
+    background-color: rgb(249, 178, 255);
+    font-weight: bold;
+}
+.menu li:nth-child(2) a:hover {
+    background-color: rgb(255, 178, 178);
+    font-weight: bold;
+}
+.menu li:nth-child(3) a:hover {
+    background-color: rgb(178, 237, 255);
+    font-weight: bold;
+}
+
+
+.Poster {
+    width: 984px;
+    height: 550px;
+    padding: 20px;
+    /* background-color: rgb(255, 246, 246); */
+}
+.Album_Text_box {
+    width: 984px;
+    height: 452px;
+    padding: 20px;
+    /* background-color: rgb(255, 149, 149); */
+}
+.Album_Text {
+    width: 452px;
+    height: 452px;
+    /* background-color: aqua; */
+    float: left;
+}
+.Album_Text2 {
+    /* text-align: center; */
+    width: 492px;
+    height: 412px;
+    padding: 20px;
+    background-color: rgb(255, 242, 242);
+    float: left;
+}
+.character_box {
+    width: 984px;
+    height: 462px;
+    padding: 20px 20px 0 20px;
+    /* background-color: rgb(230, 149, 255); */
+}
+.character {
+    width: 288px;
+    height: 362px;
+    padding: 20px;
+    /* background-color: rgb(149, 255, 211); */
+    float: left;
+    text-align: center;
+}
+.gaeun {
+    width: 944px;
+    height: 20px;
+    padding: 20px;
+    /* background-color: rgb(54, 255, 171); */
+    float: left;
+    text-align: center;
+    font-size: x-small;
+    color: gray;
+}
