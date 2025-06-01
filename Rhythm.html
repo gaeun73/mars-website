@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+            body {
+                /* background-color: #fff0f6; */
+                background-image: linear-gradient(to bottom, #fff0f6, #ffddeb);
+            }
+            .layout {
+                width: 1024px;
+                height: 1700px;
+                background-color: rgb(255, 253, 253);
+                margin: 0 auto;
+            }
+            .menu {
+                width: 1024px;
+                height: 100px;
+                background-color: blue;
+            }
+            .menu_home_img {
+                width: 200px;
+                height: 100px;
+                padding: 0 20px;
+                /* background-color: blueviolet; */
+                float: left;
+            }
+            .menu li {
+                list-style: none;
+                float: left;
+                /* padding: 20px 40px; */
+                /* a랑 padding값이 겹치면 커지기 때문에 삭제함 */
+                margin: 20px 20px 20px 0;
+                border-radius: 20px;
+            }
+            .menu li a{
+                color: black;
+                list-style: none;
+                float: left;
+                padding: 20px 40px;
+                /* margin: 20px 20px 20px 0; */
+                border-radius: 20px;
+            }
+            .menu li:nth-child(1){
+                background-color:#f0f0ff ;
+            }
+            .menu li:nth-child(2){
+                background-color:#ffe6f0;
+            }
+            .menu li:nth-child(3){
+                background-color:#eaf6ff ;
+            }
+            .menu li:first-child {
+                margin: 20px 20px 20px 390px;
+            }
+            .menu li:nth-child(1) a:hover {
+                background-color: rgb(249, 178, 255);
+                font-weight: bold;
+            }
+            .menu li:nth-child(2) a:hover {
+                background-color: rgb(255, 178, 178);
+                font-weight: bold;
+            }
+            .menu li:nth-child(3) a:hover {
+                background-color: rgb(178, 237, 255);
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="menu">
+                <div class="menu_home_img">
+                    <a href="index.html"><img src="img/MARs_Poster_Text2.png" alt="home_img"></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="May.html">메이</a></li>
+                        <li><a href="Ara.html">아라</a></li>
+                        <li><a href="Rhythm.html">리듬</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
