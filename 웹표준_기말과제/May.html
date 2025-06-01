@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>May</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+            body {
+                /* background-color: #fff0f6; */
+                background-image: linear-gradient(to bottom, #fff0f6, #ffddeb);
+            }
+            .layout {
+                width: 1024px;
+                /* height: 1800px; */
+                background-color: rgb(255, 253, 253);
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .menu {
+                width: 1024px;
+                height: 100px;
+                /* background-color: blue; */
+            }
+            .menu_home_img {
+                width: 200px;
+                height: 100px;
+                padding: 0 20px;
+                /* background-color: blueviolet; */
+                float: left;
+            }
+            .menu li {
+                list-style: none;
+                float: left;
+                /* padding: 20px 40px; */
+                /* a랑 padding값이 겹치면 커지기 때문에 삭제함 */
+                margin: 20px 20px 20px 0;
+                border-radius: 20px;
+            }
+            .menu li a{
+                color: black;
+                list-style: none;
+                float: left;
+                padding: 20px 40px;
+                /* margin: 20px 20px 20px 0; */
+                border-radius: 20px;
+            }
+            .menu li:nth-child(1){
+                background-color:#f0f0ff ;
+            }
+            .menu li:nth-child(2){
+                background-color:#ffe6f0;
+            }
+            .menu li:nth-child(3){
+                background-color:#eaf6ff ;
+            }
+            .menu li:first-child {
+                margin: 20px 20px 20px 390px;
+            }
+            .menu li:nth-child(1) a:hover {
+                background-color: rgb(249, 178, 255);
+                font-weight: bold;
+            }
+            .menu li:nth-child(2) a:hover {
+                background-color: rgb(255, 178, 178);
+                font-weight: bold;
+            }
+            .menu li:nth-child(3) a:hover {
+                background-color: rgb(178, 237, 255);
+                font-weight: bold;
+            }
+            .fullbody_box{
+                width: 984px; height: 700px;
+                padding: 20px;
+                /* background-color: orange; */
+            }
+            .fullbody{
+                width: 400px; height: 700px;
+                background-color: rebeccapurple;
+                float: left;
+                margin: 0 20px 0 0;
+            }
+            .Character_telling{
+                width: 524px; height: 400px;
+                /* background-color: red; */
+                background-color:#dc85ff;
+                float: left;
+                padding: 20px;
+            }
+            .stone_sine{
+                width: 242px; height: 160px;
+                padding: 20px;
+                background-color: rgb(255, 255, 255);
+                float: left;
+            }
+            .stone_sine_tell{
+                width: 282px; height: 60px;
+                /* background-color: aqua; */
+                background-color:#dc85ff;
+                float: left;
+                text-align: center;
+                line-height: 60px;
+                /* 가로세로 중앙정렬 */
+            }
+            .now_future_box{
+                width: 984px; height: 400px;
+                padding: 20px;
+                /* background-color: gray; */
+                float: left;
+            }
+            .now_future_Text_box{
+                width: 442px; height: 400px;
+                /* 텍스트는 40px로 */
+                background-color: rgb(255, 153, 127);
+                float: left;
+            }
+            .now_future{
+                width: 442px; height: 360px;
+                /* 텍스트는 40px로 */
+                background-color: aquamarine;
+                float: left;
+            }
+            .now_future_Text{
+                width: 442px; height: 40px;
+                /* background-color: rgb(193, 127, 255); */
+                background-color: #dc85ff;
+                float: left;
+                text-align: center;
+                line-height: 40px;
+            }
+            .now_future_next{
+                width: 100px; height: 400px;
+                /* background-color: palevioletred; */
+                float: left;
+                text-align: center;
+                line-height: 400px;
+            }
+
+            /* 이미지 변환 */
+            #future-toggle:checked + label img {
+                content: url("img/future_M.png");
+            }
+            .video{
+                width: 984px; height: 344px;
+                padding: 20px;
+                /* background-color: rgb(255, 88, 88); */
+                float: left;
+            }
+            .video :first-child{
+                margin: 0 20px 0 0;
+            }
+
+            .gaeun {
+                width: 984px;
+                height: 20px;
+                padding: 20px;
+                /* background-color: rgb(255, 253, 253); */
+                /* background-color: rgb(54, 255, 171); */
+                float: left;
+                text-align: center;
+                font-size: x-small;
+                color: gray;
+            }
+
+            /* 여기 밑부터 비디오를 반응형으로 만들기 위해 작성하고 싶었으나... 업로더가 막아둔 것으로 파악 */
+            /* .videoWrap {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+            }
+            .videoWrap iframe, 
+            .videoWrap object, 
+            .videoWrap embed {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            } */
+
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="menu">
+                <div class="menu_home_img">
+                    <a href="index.html"><img src="img/MARs_Poster_Text2.png" alt="home_img"></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="May.html">메이</a></li>
+                        <li><a href="Ara.html">아라</a></li>
+                        <li><a href="Rhythm.html">리듬</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fullbody_box">
+                <div class="fullbody">
+                <img src="img/fullbody_M.png" alt="fullbody_May">
+            </div>
+                <div class="Character_telling">
+                    <br><h1>메이</h1><br>
+                        <h3>아르헨티나 출신 혼혈 소녀로, 인기 패션잡지 모델이자
+                            아라가 존경하는 프리즘 스타다. 프리즘 쇼 데뷔 이벤트 당일 갑자기
+                            사라져 아라와 리듬의 깜짝 데뷔를 이끌었다. 이후 간헐적으로 등장하다가
+                            동료로 합류하지만 자기주장이 강해 리듬과 갈등도 겪는다.
+                        </h3><br>
+                        <h3>
+                        시간이 지나면서 프리즘 스타로서 성장하며 각종 대회에서 연속 우승을 거둔다.
+                        부에노스아이레스로 돌아가 부모님과 재회하고, 아라와 리듬과 함께 MARs를
+                        결성한다. 최종 결승에서는 아라에게 2위를 내주지만 우정을 지키며 해피 엔딩을
+                        맞이한다.
+                        </h3><br>
+                        <h3>
+                            특전 영상에서는 ‘매지컬 미온’으로도 등장한다.
+                        </h3>
+                </div>
+                <div class="stone_sine">
+                    <img src="img/Stone_M.png" alt="Stone_May_img">
+                </div>
+                <div class="stone_sine">
+                    <img src="img/Sine_M.png" alt="Sine_May_img">
+                </div>
+                <div class="stone_sine_tell">
+                    <h3>패션타입: 쿨</h3>
+                </div>
+                <div class="stone_sine_tell">
+                    <h3>사인</h3>
+                </div>
+            </div>
+            <div class="now_future_box">
+                <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <img src="img/now_M.png" alt="now_May_img">
+                    </div>
+                    <div class="now_future_Text">
+                        <h3>현재(17세)</h3>
+                    </div>
+                </div>
+
+                <div class="now_future_next">
+                    <h3>3년 뒤</h3>
+                </div>
+
+                <!-- <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <img src="img/future_A.png" alt="future_May_img">
+                    </div>
+                    <div class="now_future_Text">
+                        <h3>미래(20세)</h3>
+                    </div>
+                </div> -->
+                
+
+                <!-- 이미지 클릭시 변환 -->
+                 <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <input type="checkbox" id="future-toggle" style="display: none;">
+                        <label for="future-toggle">
+                            <img src="img/future_M2.png" alt="future_May_img" id="future_img">
+                        </label>
+                    </div>
+                    <div class="now_future_Text">
+                            <h3>미래(20세)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video src="img/video_M.mp4" controls height="344px"></video>
+                <video src="img/video_A2_M2.mp4" controls height="344px"></video>
+            </div>
+            <!-- <div class="now_future_box"> -->
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RZgQ8RgAFsw?si=hm9jpUjNeXDI5ljC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <!-- </div> -->
+             <div class="gaeun"><p>© 25/06 김가은 제작.</p></div>
+        </div>
+    </body>
+</html>
