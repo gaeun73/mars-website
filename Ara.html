@@ -104,6 +104,7 @@
                 width: 984px; height: 400px;
                 padding: 20px;
                 background-color: gray;
+                float: left;
             }
             .now_future_Text_box{
                 width: 442px; height: 400px;
@@ -135,6 +136,12 @@
             /* 이미지 변환 */
             #future-toggle:checked + label img {
                 content: url("img/future_A.png");
+            }
+            .video{
+                width: 984px; height: 272px;
+                padding: 20px;
+                background-color: rgb(255, 88, 88);
+                float: left;
             }
 
             /* 여기 밑부터 비디오를 반응형으로 만들기 위해 작성하고 싶었으나... 업로더가 막아둔 것으로 파악 */
@@ -235,7 +242,10 @@
                             <h3>미래(20세)</h3>
                     </div>
                 </div>
-                
+            </div>
+            <div class="video">
+                <video src="img/video_A.mp4" alt="video_Ara" controls height="352.5px"></video>
+                <video src="img/video_A2.mp4" alt="video_Ara" controls height="352px.5"></video>
             </div>
             <!-- <div class="now_future_box"> -->
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RZgQ8RgAFsw?si=hm9jpUjNeXDI5ljC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
