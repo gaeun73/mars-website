@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Rhythm</title>
         <style>
             * {
                 margin: 0;
@@ -13,14 +14,15 @@
             }
             .layout {
                 width: 1024px;
-                height: 1700px;
+                /* height: 1800px; */
                 background-color: rgb(255, 253, 253);
                 margin: 0 auto;
+                overflow: hidden;
             }
             .menu {
                 width: 1024px;
                 height: 100px;
-                background-color: blue;
+                /* background-color: blue; */
             }
             .menu_home_img {
                 width: 200px;
@@ -69,6 +71,112 @@
                 background-color: rgb(178, 237, 255);
                 font-weight: bold;
             }
+            .fullboody_box{
+                width: 984px; height: 700px;
+                padding: 20px;
+                /* background-color: orange; */
+            }
+            .fullbody{
+                width: 400px; height: 700px;
+                background-color: rebeccapurple;
+                float: left;
+                margin: 0 20px 0 0;
+            }
+            .ChRhythmcter_telling{
+                width: 524px; height: 400px;
+                /* background-color: red; */
+                background-color:#85acff;
+                float: left;
+                padding: 20px;
+            }
+            .stone_sine{
+                width: 242px; height: 160px;
+                padding: 20px;
+                background-color: rgb(255, 255, 255);
+                float: left;
+            }
+            .stone_sine_tell{
+                width: 282px; height: 60px;
+                /* background-color: aqua; */
+                background-color: #85acff;
+                float: left;
+                text-align: center;
+                line-height: 60px;
+                /* 가로세로 중앙정렬 */
+            }
+            .now_future_box{
+                width: 984px; height: 400px;
+                padding: 20px;
+                /* background-color: gray; */
+                float: left;
+            }
+            .now_future_Text_box{
+                width: 442px; height: 400px;
+                /* 텍스트는 40px로 */
+                background-color: rgb(255, 153, 127);
+                float: left;
+            }
+            .now_future{
+                width: 442px; height: 360px;
+                /* 텍스트는 40px로 */
+                background-color: aquamarine;
+                float: left;
+            }
+            .now_future_Text{
+                width: 442px; height: 40px;
+                /* background-color: rgb(193, 127, 255); */
+                background-color: #85acff;
+                float: left;
+                text-align: center;
+                line-height: 40px;
+            }
+            .now_future_next{
+                width: 100px; height: 400px;
+                /* background-color: palevioletred; */
+                float: left;
+                text-align: center;
+                line-height: 400px;
+            }
+
+            /* 이미지 변환 */
+            #future-toggle:checked + label img {
+                content: url("img/future_R.png");
+            }
+            .video{
+                width: 984px; height: 344px;
+                padding: 20px;
+                /* background-color: rgb(255, 88, 88); */
+                float: left;
+            }
+            .video :first-child{
+                margin: 0 20px 0 0;
+            }
+
+            .gaeun {
+                width: 984px;
+                height: 20px;
+                padding: 20px;
+                /* background-color: rgb(255, 253, 253); */
+                /* background-color: rgb(54, 255, 171); */
+                float: left;
+                text-align: center;
+                font-size: x-small;
+                color: gray;
+            }
+
+            /* 여기 밑부터 비디오를 반응형으로 만들기 위해 작성하고 싶었으나... 업로더가 막아둔 것으로 파악 */
+            /* .videoWrap {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+            }
+            .videoWrap iframe, 
+            .videoWrap object, 
+            .videoWrap embed {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            } */
 
         </style>
     </head>
@@ -86,6 +194,86 @@
                     </ul>
                 </div>
             </div>
+            <div class="fullboody_box">
+                <div class="fullbody">
+                <img src="img/fullbody_R.png" alt="fullbody_Rhythm">
+            </div>
+                <div class="ChRhythmcter_telling">
+                    <br><h1>리듬</h1><br>
+                        <h3>발랄한 여고생으로 프리즘 퀸을 목표로 한다.
+                            운동신경이 뛰어나고 아라와 절친한 친구다.
+                            패션 센스는 독특하며 공부는 약하다. 메이와
+                            갈등이 있었으나 점차 화해한다.
+                        </h3><br>
+                        <h3>
+                            42화에서 어머니 소피아를 만나고, 오로라 라이징을 연습하며 흑화해
+                            힘든 시기를 겪는다. 아라와 메이의 도움으로 회복하고 자신의 어두운 마음을
+                            솔직히 드러낸다.
+                        </h3><br>
+                        <h3>
+                            49화에서 프리즘 퀸 컵에 출전해 어머니와 감동적인 재회 후 실격되지만,
+                            50화에서 아라를 응원하며 함께 오로라 라이징을 시전한다.
+                            최종화에서는 MARs 멤버로 활동하며 해피 엔딩을 맞이한다.
+                        </h3>
+                </div>
+                <div class="stone_sine">
+                    <img src="img/Stone_R.png" alt="Stone_Rhythm_img">
+                </div>
+                <div class="stone_sine">
+                    <img src="img/Sine_R.png" alt="Sine_Rhythm_img">
+                </div>
+                <div class="stone_sine_tell">
+                    <h3>패션타입: 팝</h3>
+                </div>
+                <div class="stone_sine_tell">
+                    <h3>사인</h3>
+                </div>
+            </div>
+            <div class="now_future_box">
+                <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <img src="img/now_R.png" alt="now_Rhythm_img">
+                    </div>
+                    <div class="now_future_Text">
+                        <h3>현재(17세)</h3>
+                    </div>
+                </div>
+
+                <div class="now_future_next">
+                    <h3>3년 뒤</h3>
+                </div>
+
+                <!-- <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <img src="img/future_A.png" alt="future_Rhythm_img">
+                    </div>
+                    <div class="now_future_Text">
+                        <h3>미래(20세)</h3>
+                    </div>
+                </div> -->
+                
+
+                <!-- 이미지 클릭시 변환 -->
+                 <div class="now_future_Text_box">
+                    <div class="now_future">
+                        <input type="checkbox" id="future-toggle" style="display: none;">
+                        <label for="future-toggle">
+                            <img src="img/future_R2.png" alt="future_Rhythm_img" id="future_img">
+                        </label>
+                    </div>
+                    <div class="now_future_Text">
+                            <h3>미래(20세)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video src="img/video_R.mp4" controls height="344px"></video>
+                <video src="img/video_R2.mp4" controls height="344px"></video>
+            </div>
+            <!-- <div class="now_future_box"> -->
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RZgQ8RgAFsw?si=hm9jpUjNeXDI5ljC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <!-- </div> -->
+             <div class="gaeun"><p>© 25/06 김가은 제작.</p></div>
         </div>
     </body>
 </html>

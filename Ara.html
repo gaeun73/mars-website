@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Ara</title>
         <style>
+            /* 기본 설정 */
             * {
                 margin: 0;
                 padding: 0;
                 text-decoration: none;
             }
             body {
-                /* background-color: #fff0f6; */
                 background-image: linear-gradient(to bottom, #fff0f6, #ffddeb);
             }
+
+            /* 전체 레이아웃 */
             .layout {
                 width: 1024px;
-                height: 1700px;
                 background-color: rgb(255, 253, 253);
                 margin: 0 auto;
+                overflow: hidden;
             }
+
+            /* 상단 메뉴 */
             .menu {
                 width: 1024px;
                 height: 100px;
-                background-color: blue;
             }
             .menu_home_img {
                 width: 200px;
                 height: 100px;
                 padding: 0 20px;
-                /* background-color: blueviolet; */
-                float: left;
+                float: left; /* 로고 왼쪽 정렬 */
             }
             .menu li {
                 list-style: none;
                 float: left;
-                /* padding: 20px 40px; */
-                /* a랑 padding값이 겹치면 커지기 때문에 삭제함 */
                 margin: 20px 20px 20px 0;
                 border-radius: 20px;
             }
-            .menu li a{
+            .menu li a {
                 color: black;
-                list-style: none;
                 float: left;
                 padding: 20px 40px;
-                /* margin: 20px 20px 20px 0; */
                 border-radius: 20px;
             }
-            .menu li:nth-child(1){
-                background-color:#f0f0ff ;
-            }
-            .menu li:nth-child(2){
-                background-color:#ffe6f0;
-            }
-            .menu li:nth-child(3){
-                background-color:#eaf6ff ;
-            }
+
+            /* 메뉴 배경 색상 */
+            .menu li:nth-child(1) { background-color: #f0f0ff; }  /* 메이 */
+            .menu li:nth-child(2) { background-color: #ffe6f0; }  /* 아라 */
+            .menu li:nth-child(3) { background-color: #eaf6ff; }  /* 리듬 */
+
+            /* 가운데 정렬을 위한 마진 */
             .menu li:first-child {
                 margin: 20px 20px 20px 390px;
             }
+
+            /* 메뉴 hover 효과 */
             .menu li:nth-child(1) a:hover {
                 background-color: rgb(249, 178, 255);
                 font-weight: bold;
@@ -69,99 +68,111 @@
                 background-color: rgb(178, 237, 255);
                 font-weight: bold;
             }
-            .fullboody_box{
-                width: 984px; height: 700px;
+
+            /* 캐릭터 전체 정보 영역 */
+            .fullbody_box {
+                width: 984px;
+                height: 700px;
                 padding: 20px;
-                background-color: orange;
             }
-            .fullbody{
-                width: 400px; height: 700px;
+            .fullbody {
+                width: 400px;
+                height: 700px;
                 background-color: rebeccapurple;
                 float: left;
-                margin: 0 20px 0 0;
+                margin-right: 20px;
             }
-            .Character_telling{
-                width: 524px; height: 400px;
-                background-color: red;
+            .Character_telling {
+                width: 524px;
+                height: 400px;
+                background-color: #ff85b3;
                 float: left;
                 padding: 20px;
             }
-            .stone_sine{
-                width: 242px; height: 160px;
+
+            /* 돌, 사인 이미지 */
+            .stone_sine {
+                width: 242px;
+                height: 160px;
                 padding: 20px;
-                background-color: green;
+                background-color: white;
                 float: left;
             }
-            .stone_sine_tell{
-                width: 282px; height: 60px;
-                background-color: aqua;
+            .stone_sine_tell {
+                width: 282px;
+                height: 60px;
+                background-color: #ff85b3;
                 float: left;
                 text-align: center;
                 line-height: 60px;
-                /* 가로세로 중앙정렬 */
             }
-            .now_future_box{
-                width: 984px; height: 400px;
+
+            /* 현재, 미래 정보 영역 */
+            .now_future_box {
+                width: 984px;
+                height: 400px;
                 padding: 20px;
-                background-color: gray;
                 float: left;
             }
-            .now_future_Text_box{
-                width: 442px; height: 400px;
-                /* 텍스트는 40px로 */
+            .now_future_Text_box {
+                width: 442px;
+                height: 400px;
                 background-color: rgb(255, 153, 127);
                 float: left;
             }
-            .now_future{
-                width: 442px; height: 360px;
-                /* 텍스트는 40px로 */
+            .now_future {
+                width: 442px;
+                height: 360px;
                 background-color: aquamarine;
                 float: left;
             }
-            .now_future_Text{
-                width: 442px; height: 40px;
-                background-color: rgb(193, 127, 255);
+            .now_future_Text {
+                width: 442px;
+                height: 40px;
+                background-color: #ff85b3;
                 float: left;
                 text-align: center;
                 line-height: 40px;
             }
-            .now_future_next{
-                width: 100px; height: 400px;
-                background-color: palevioletred;
+            .now_future_next {
+                width: 100px;
+                height: 400px;
                 float: left;
                 text-align: center;
                 line-height: 400px;
             }
 
-            /* 이미지 변환 */
+            /* 체크박스로 미래 이미지 전환 */
             #future-toggle:checked + label img {
                 content: url("img/future_A.png");
             }
-            .video{
-                width: 984px; height: 272px;
+
+            /* 영상 영역 */
+            .video {
+                width: 984px;
+                height: 344px;
                 padding: 20px;
-                background-color: rgb(255, 88, 88);
                 float: left;
             }
-
-            /* 여기 밑부터 비디오를 반응형으로 만들기 위해 작성하고 싶었으나... 업로더가 막아둔 것으로 파악 */
-            /* .videoWrap {
-                position: relative;
-                width: 100%;
-                padding-bottom: 56.25%;
+            .video :first-child {
+                margin-right: 20px;
             }
-            .videoWrap iframe, 
-            .videoWrap object, 
-            .videoWrap embed {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            } */
 
+            /* 제작자 이름 푸터 */
+            .gaeun {
+                width: 984px;
+                height: 20px;
+                padding: 20px;
+                float: left;
+                text-align: center;
+                font-size: x-small;
+                color: gray;
+            }
         </style>
     </head>
     <body>
         <div class="layout">
+            <!-- 상단 메뉴 영역 -->
             <div class="menu">
                 <div class="menu_home_img">
                     <a href="index.html"><img src="img/MARs_Poster_Text2.png" alt="home_img"></a>
@@ -174,24 +185,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="fullboody_box">
+
+            <!-- 캐릭터 설명과 이미지 -->
+            <div class="fullbody_box">
                 <div class="fullbody">
-                <img src="img/fullbody_A.png" alt="fullbody_Ara">
-            </div>
+                    <img src="img/fullbody_A.png" alt="fullbody_Ara">
+                </div>
                 <div class="Character_telling">
                     <br><h1>아라</h1><br>
-                        <h3>매사에 소심하고 내성적인 성격이라 먼저 나서려는 경향이 없고
-                            매사 말투가 조심스럽고 자신감이 없는 편이고 모든 게 달라지는 새학기를 싫어한다.
-                            매사에 적극적이고 당당한 리듬과 반대다.
-                        </h3><br>
-                        <h3>
+                    <h3>
+                        매사에 소심하고 내성적인 성격이라 먼저 나서려는 경향이 없고
+                        매사 말투가 조심스럽고 자신감이 없는 편이고 모든 게 달라지는 새학기를 싫어한다.
+                        매사에 적극적이고 당당한 리듬과 반대다.
+                    </h3><br>
+                    <h3>
                         하지만 주 관심사가 패션이라 옷 얘기만 나오면 모습이 180도 달라지는데 옷 얘기만
                         나오면 평소와 다르게 말이 많아지고 적극적인 태도로 변해서 거의 다른 사람으로
                         보일 정도로 옷을 사랑한다.
-                        </h3><br>
-                        <h3>
-                            그리고 의외로 강인하고 단호한 면도 있는데 시간이 지나며 프리즘 스타로 성장해나가며 그 점이 두드러진다.
-                        </h3>
+                    </h3><br>
+                    <h3>
+                        그리고 의외로 강인하고 단호한 면도 있는데 시간이 지나며 프리즘 스타로 성장해나가며 그 점이 두드러진다.
+                    </h3>
                 </div>
                 <div class="stone_sine">
                     <img src="img/Stone_A.png" alt="Stone_Ara_img">
@@ -206,6 +220,8 @@
                     <h3>사인</h3>
                 </div>
             </div>
+
+            <!-- 현재 / 미래 정보 비교 -->
             <div class="now_future_box">
                 <div class="now_future_Text_box">
                     <div class="now_future">
@@ -220,18 +236,7 @@
                     <h3>3년 뒤</h3>
                 </div>
 
-                <!-- <div class="now_future_Text_box">
-                    <div class="now_future">
-                        <img src="img/future_A.png" alt="future_Ara_img">
-                    </div>
-                    <div class="now_future_Text">
-                        <h3>미래(20세)</h3>
-                    </div>
-                </div> -->
-                
-
-                <!-- 이미지 클릭시 변환 -->
-                 <div class="now_future_Text_box">
+                <div class="now_future_Text_box">
                     <div class="now_future">
                         <input type="checkbox" id="future-toggle" style="display: none;">
                         <label for="future-toggle">
@@ -239,17 +244,21 @@
                         </label>
                     </div>
                     <div class="now_future_Text">
-                            <h3>미래(20세)</h3>
+                        <h3>미래(20세)</h3>
                     </div>
                 </div>
             </div>
+
+            <!-- 캐릭터 영상 영역 -->
             <div class="video">
-                <video src="img/video_A.mp4" alt="video_Ara" controls height="352.5px"></video>
-                <video src="img/video_A2.mp4" alt="video_Ara" controls height="352px.5"></video>
+                <video src="img/video_A.mp4" controls height="344px"></video>
+                <video src="img/video_A2.mp4" controls height="344px"></video>
             </div>
-            <!-- <div class="now_future_box"> -->
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RZgQ8RgAFsw?si=hm9jpUjNeXDI5ljC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-            <!-- </div> -->
+
+            <!-- 푸터 -->
+            <div class="gaeun">
+                <p>© 25/06 김가은 제작.</p>
+            </div>
         </div>
     </body>
 </html>
